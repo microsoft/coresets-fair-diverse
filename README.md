@@ -1,10 +1,39 @@
 # Core-sets for Fair and Diverse Data Summarization
 This is the code repository for the paper **Core-sets for Fair and Diverse Data Summarization**
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Code structure and usage
+
+* First, follow the procedure explained in the repository [1] and use the script `generate_dataset.py` to load the initial Reddit file with Reddit ids and time stamps, and using the Reddit API make a call to retrieve the text of these messages.
+  * Download the **Reddit dataset** (raw_data.zip) from this paper and repository [1]. 
+  * The messages text is extracted by using the [Reddit API](https://github.com/reddit-archive/reddit/wiki/OAuth2) and the user needs to request client id and secret id and provide it as arguments to this script.
+  * The outcome is the input file augmented with the text of the actual message.
+
+* `utils/` contains the functionalities related to diversity maximization, data preprocessing and loading the datasets once they are preprocessed.
+  * `preprocessing.py` encodes the actual message into a metric space and add color class to the message.
+  * `data_loader.py` loads the Reddit or MovieLens datasets already encoded in a metric space, select the appropriate columns and convert into `numpy` matrices that are used by the DM and FDM algorithms.
+  * `diversity_maximization.py` contains the function for Diversity Maximization (DM), Core-set Construction and Fair Diversity Maximization (FDM): 
+    - `dm_sum_pairwise`, `dm_min_pairwise`, and `dm_sum_nn` are Diversity Maximization (DM) approximation algorithms in the Sum-Pairwise, Min-Pairwise and Sum-NN notion of diversity, respectively.
+    - `cs_construction_sum_pairwise`, `cs_construction_min_pairwise`, and `cs_construction_sum_nn` are the core-set construction algorithms in the Sum-Pairwise, Min-Pairwise and Sum-NN notion of diversity, respectively.
+    - `fdm_sum_pairwise`, `fdm_min_pairwise`, and `fdm_sum_nn` are Fair Diversity Maximization (FDM) a.k.a <em>colored version</em> approximation algorithms in the Sum-Pairwise, Min-Pairwise and Sum-NN notion of diversity, respectively.
+
+## References
+
+[1] Henghui Zhu, Feng Nan, Zhiguo Wang, Ramesh Nallapati, and Bing Xiang. Who Did They Respond to? Conversation Structure Modeling Using Masked Hierarchical Transformer, In Proceedings of AAAI, 2020.
+[code repository](https://github.com/henghuiz/MaskedHierarchicalTransformer)
+
+## Citation
+
+If you have used the paper, please cite as:
+
+```
+@inproceedings{coreset_fair_diverse_datasum_neurips2023,
+  title={Core-sets for Fair and Diverse Data Summarization},
+  author={Mahabadi, Sepideh and Trajanovski, Stojan},
+  booktitle = {-},
+  volume = {36},
+  year={2023}
+}
+```
 
 ## Contributing
 
