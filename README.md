@@ -19,6 +19,7 @@ This is the code repository for the paper **Core-sets for Fair and Diverse Data 
 ## References
 
 [1] Henghui Zhu, Feng Nan, Zhiguo Wang, Ramesh Nallapati, and Bing Xiang. Who Did They Respond to? Conversation Structure Modeling Using Masked Hierarchical Transformer, In Proceedings of AAAI, 2020.
+
 [code repository](https://github.com/henghuiz/MaskedHierarchicalTransformer)
 
 ## Citation
@@ -26,11 +27,11 @@ This is the code repository for the paper **Core-sets for Fair and Diverse Data 
 If you have used the paper, please cite as:
 
 ```
-@inproceedings{coreset_fair_diverse_datasum_neurips2023,
+@inproceedings{coreset_fair_diverse_datasum,
   title={Core-sets for Fair and Diverse Data Summarization},
   author={Mahabadi, Sepideh and Trajanovski, Stojan},
   booktitle = {-},
-  volume = {36},
+  volume = {-},
   year={2023}
 }
 ```
