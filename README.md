@@ -1,5 +1,5 @@
 # Core-sets for Fair and Diverse Data Summarization
-This is the code repository for the paper **Core-sets for Fair and Diverse Data Summarization**, to appear in NeurIPS 2023.
+This is the code repository for the paper [**Core-sets for Fair and Diverse Data Summarization**](https://www.microsoft.com/en-us/research/publication/core-sets-for-fair-and-diverse-data-summarization/) ([pdf](https://aka.ms/coresets-fair)), accepted for NeurIPS 2023.
 
 ## Code structure and usage
 
@@ -30,7 +30,7 @@ If you have used the paper, please cite as:
   title={Core-sets for Fair and Diverse Data Summarization},
   author={Mahabadi, Sepideh and Trajanovski, Stojan},
   booktitle = {Neural Information Processing Systems (NeurIPS 2023)},
-  volume = {37},
+  volume = {36},
   year={2023}
 }
 ```
