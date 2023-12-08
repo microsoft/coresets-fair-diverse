@@ -1,5 +1,5 @@
 # Core-sets for Fair and Diverse Data Summarization
-This is the code repository for the paper **Core-sets for Fair and Diverse Data Summarization**, accepted for NeurIPS 2023 ([pdf](https://aka.ms/coresets-fair)).
+This is the code repository for the paper **Core-sets for Fair and Diverse Data Summarization**, accepted for NeurIPS 2023 ([project page](https://aka.ms/coresets-fair-diverse), [pdf](https://www.microsoft.com/en-us/research/uploads/prod/2023/09/coresets-for-fair-diverse.pdf), [arXiv](https://arxiv.org/abs/2310.08122), [poster](https://www.microsoft.com/en-us/research/uploads/prod/2023/09/coreset-for-fair-diverse_poster.pdf)).
 
 ## Code structure and usage
 
